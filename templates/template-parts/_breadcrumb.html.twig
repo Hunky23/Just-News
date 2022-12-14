@@ -1,0 +1,6 @@
+<section class="breadcrumb">
+    {% for key, value in links %}
+        <a class="" href="{{ value }}">{{ key }}</a>
+        {% if not loop.last %}>{% endif %}
+    {% endfor %}
+</section>
